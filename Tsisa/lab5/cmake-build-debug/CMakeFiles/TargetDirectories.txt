@@ -1,0 +1,3 @@
+D:/New_Folder/Tsisa/lab5/cmake-build-debug/CMakeFiles/lab5.dir
+D:/New_Folder/Tsisa/lab5/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/New_Folder/Tsisa/lab5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

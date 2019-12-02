@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/New_Folder/Tsisa/lab5/functions/functions.hpp
+vector
+-
+iostream
+-
+iomanip
+-
+algorithm
+-
+cmath
+-
+cstddef
+-
+
+D:/New_Folder/Tsisa/lab5/main.cpp
+iostream
+-
+windows.h
+-
+functions/functions.hpp
+D:/New_Folder/Tsisa/lab5/functions/functions.hpp
+
