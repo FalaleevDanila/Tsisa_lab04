@@ -239,21 +239,19 @@ void                  parettoMethod (std::vector <double> first, std::vector <do
         std::vector <double> line;
         line.push_back(second[i]);
         line.push_back(third[i]);
-        double maxXi= *std::min_element(std::begin(line),std::end(line));
+        double maxXi= *std::max_element(std::begin(line),std::end(line));
         double maxYi= *std::max_element(std::begin(line),std::end(line));
         if( i==0 || maxXi > maxX) maxX=maxXi;
         if( i==0 || maxYi > maxY) maxY=maxYi;
     }
+    if(maxX>maxY) maxY=maxX;
+    else maxX = maxY;
     auto minL = -1;
     auto l = -1;
     auto iter = 0;
 
     for(int i=0; i<4;i++){
-        l=sqrt((second[i]-maxX)*(second[i]-maxX)+(third[i]-maxY)*(third[i]-maxY));
-        if(l<minL || i==0){
-            minL=l;
-            iter=i+1;
-        }
+       if(second[i] == maxX ||third[i] == maxX) iter=i+1;
     }
     answer(iter);
 
